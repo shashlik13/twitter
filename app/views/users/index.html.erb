@@ -1,0 +1,10 @@
+<% provide(:title, 'Пользователи') %>
+<h1>Пользователи</h1>
+
+<%= will_paginate next_label: "Дальше →", previous_label: "← Назад" %>
+
+<ul class="users">
+    <%= render @users %>
+</ul>
+
+<%= will_paginate next_label: "Дальше →", previous_label: "← Назад" %>
